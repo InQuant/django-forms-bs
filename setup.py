@@ -1,7 +1,7 @@
 import sys
 from setuptools import setup
 from setuptools.command.test import test as TestCommand
-
+from forms_bs import __version__
 
 class Tox(TestCommand):
 
@@ -29,12 +29,12 @@ TESTS_REQUIRE = ['tox >= 2.3']
 
 
 setup(
-    name='forms_bs',
-    version='0.1.0',
-    author='Dominik Lysiak',
-    author_email='dominik.lysiak@freenet.de',
+    name='django-forms-bs',
+    version=__version__,
+    author='InQuant GmbH',
+    author_email='info@inquant.de',
     packages=['forms_bs'],
-    url='https://github.com/domlysi/forms_bs',
+    url='https://github.com/InQuant/django-forms-bs',
     license='MIT',
     description='A simple but effective description.',
     long_description=open('README.md').read(),
