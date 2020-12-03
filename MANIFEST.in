@@ -1,0 +1,5 @@
+include LICENSE
+include README.md
+recursive-include forms_bs/templates *
+recursive-include forms_bs/static *
+recursive-include forms_bs *.py
