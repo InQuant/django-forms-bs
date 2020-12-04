@@ -63,7 +63,7 @@ class BSForm(forms.Form):
                 is_checkbox = False
                 if bf.field.widget.input_type == CheckboxInput.input_type:
                     bf.field.widget.attrs['class'] = str(bf_class + ' form-check-input').strip()
-                    label = bf.label_tag(bf.label, label_suffix='test') or ''
+                    label = bf.label_tag(bf.label, label_suffix='') or ''
                     is_checkbox = True
 
                 elif bf.field.widget.input_type == RadioSelect.input_type:
